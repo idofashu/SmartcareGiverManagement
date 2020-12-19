@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+/* For Background Image */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  
+  background-image: url("doc.jpg");
+
+  /* Full height */
+  height: 160%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  opacity:110%;
+
+}
+
+/* End of Background */
+
+/* For Sign up box */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 13px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #243ff2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 1px 13px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* End of sign up box */
+
+/* Dropdown Beg */
+.dropbtn {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 10px 150px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: right;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Color-change of list item on moviing pointer on them */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4b5ff6;
+}
+
+/* Dropdown end */
+</style>
+<body>
+
+  <!-- For bg-img -->
+     
+     <div class="bg">
+
+
+  <table align="center" width="40%" height="100%">
+    <tr>
+      <td>
+
+<form action="link.php" method="post" style="border:1px solid #ccc">
+  <div class="container">
+    <h1 align="center">Care-Giver's Signup</h1>
+    <p align="center"><b><font color="black">Please fill in this form to create an account.</font></b></p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+       <br>
+
+    
+    <label for="fos"><b>Gender:</b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+   
+      <div class="dropbtn">
+
+      <select name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  
+    </div>
+    <br>
+
+
+
+    
+    <label for="fos"><b>Field of Specialisation</b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+<div class="dropbtn">
+       <select name="fields">
+
+    <option value="Nursing Assistant">Nursing Assistant</option>
+    <option value="Elderly Care">Elderly Care</option>
+    <option value="Baby Sitting">Baby Sitting</option>
+    <option value="Medical Assistant">Medical Assistant</option>
+
+    <option value="Cardipulmonary Physiotherapist">Cardipulmonary Physiotherapist</option>
+    <option value="Geriatrics Physiotherapist">Geriatrics Physiotherapist</option>
+    <option value="Neurological Physiotherapist">Neurological Physiotherapist</option>
+    <option value="Sports Physiotherapist">Sports Physiotherapist</option>
+    <option value="Manual Physiotherapist">Manual Physiotherapist</option>
+    <option value="Orthopedic Physiotherapist">Orthopedic Physiotherapist</option>
+    <option value="Pdeiatrics Physiotherapist">Pdeiatrics Physiotherapist</option>
+  </select>
+    </div>
+
+    <br>
+    
+     
+     <label for="oth"><b>Additional Specilisation:</b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+<div class="dropbtn">
+       <select name="oth">
+
+    <option value="Nursing Assistant">Nursing Assistant</option>
+    <option value="Elderly Care">Elderly Care</option>
+    <option value="Baby Sitting">Baby Sitting</option>
+    <option value="Medical Assistant">Medical Assistant</option>
+
+    <option value="Cardipulmonary Physiotherapist">Cardipulmonary Physiotherapist</option>
+    <option value="Geriatrics Physiotherapist">Geriatrics Physiotherapist</option>
+    <option value="Neurological Physiotherapist">Neurological Physiotherapist</option>
+    <option value="Sports Physiotherapist">Sports Physiotherapist</option>
+    <option value="Manual Physiotherapist">Manual Physiotherapist</option>
+    <option value="Orthopedic Physiotherapist">Orthopedic Physiotherapist</option>
+    <option value="Pdeiatrics Physiotherapist">Pdeiatrics Physiotherapist</option>
+  </select>
+    </div>
+
+    <br>
+
+    
+    <label for="fos"><b>Provide Therapy To</b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+
+       <div class="dropbtn">
+
+       <select name="ages">
+    <option value="newborn babies">New Born Babies</option>
+    <option value="teenage">Teenage</option>
+    <option value="middleage">Middle age</option>
+    <option value="oldage">Old Age</option>
+  </select>
+    </div>
+
+    <br>
+    
+
+
+     
+    <label for="fos"><b>Available For</b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+
+      <div class="dropbtn">
+
+       <select name="timedur">
+    <option value="oneshort">One Short</option>
+    <option value="monthlybasis">Monthly Basis</option>
+    
+  </select>
+    </div>
+
+
+    <br>
+    
+
+     <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="yoe"><b>Year of Experience</b></label>
+    <input type="text" placeholder="Enter Year of Experience" name="yoe" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    
+    
+    
+
+    <div class="clearfix">
+      <a href="Doc_login.html"><button type="button" class="cancelbtn"> Cancel</button></a>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

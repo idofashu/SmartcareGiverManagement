@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+/* For Background Image */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  
+  background-image: url("img2.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  opacity:110%;
+
+}
+
+/* End of Background */
+
+button {
+  background-color: #243ff2;
+  color: white;
+  padding: 14px 0px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  /*margin: 24px 0 12px 0; */
+}
+
+
+.container {
+  padding: 10px 80px;
+  float: center;
+  width: 50%;
+  
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.text {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+    <div class="bg">
+
+  <table width="40%" height="100%" align="center" border="0">
+    <tr align="center">
+      <td >
+
+
+  
+
+        <div class="imgcontainer">
+    <img src="select.png" alt="Avatar" class="avatar">
+  </div>
+
+        <h1 align="center"><font color="white"> Select as per your requirements </font></h1>
+        
+       <form action="search.php" method="POST">
+
+  <label for="fos"><b>&nbsp;&nbsp;<font color="white">Select Care-Giver:&nbsp;&nbsp;</font></b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+
+    <select name="fields">
+
+    <option value="Nursing Assistant">Nursing Assistant</option>
+    <option value="Elderly Care">Elderly Care</option>
+    <option value="Baby Sitting">Baby Sitting</option>
+    <option value="Medical Assistant">Medical Assistant</option>
+
+    <option value="Cardipulmonary Physiotherapist" >Cardipulmonary Physiotherapist</option>
+    <option value="geriatricsGeriatrics Physiotherapist">Geriatrics Physiotherapist</option>
+    <option value="Neurological Physiotherapist">Neurological Physiotherapist</option>
+    <option value="Sports Physiotherapist">Sports Physiotherapist</option>
+    <option value="Manual Physiotherapist">Manual Physiotherapist</option>
+    <option value="Orthopedic Physiotherapist">Orthopedic Physiotherapist</option>
+    <option value="Pdeiatrics Physiotherapist">Pdeiatrics Physiotherapist</option>
+  </select>
+    </div>
+
+    <br>
+    <br>
+
+   <div class="dropdown">
+    <label for="fos"><b>&nbsp;&nbsp;<font color="white">Care Required For:&nbsp;&nbsp;</font></b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+
+       <select name="ages">
+    <option value="newborn babies">New Born Babies</option>
+    <option value="teenage">Teenage</option>
+    <option value="middleage">Middle age</option>
+    <option value="oldage">Old Age</option>
+  </select>
+    </div>
+
+    <br>
+
+
+     <div class="dropdown">
+    <label for="fos"><b>&nbsp;&nbsp;<font color="white">Availabity Required:&nbsp;&nbsp;</font></b></label>
+    <!-- <input type="text" placeholder="Enter Field of Specialisatio" name="fos" required> -->
+
+       <select name="timedur">
+    <option value="oneshort">One Short</option>
+    <option value="monthlybasis">Monthly Basis</option>
+
+    </select>
+    </div>
+
+        
+      <div class="container">
+        <button type="submit">Submit</button>
+
+        </div>
+      <!--
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  -->
+</form>
+
+     
+  </td>
+    </tr>
+  </table>
+  
+
+</body>
+</html>
